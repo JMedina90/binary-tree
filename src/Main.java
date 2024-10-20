@@ -1,23 +1,5 @@
 import java.util.Scanner;
-/*
-    Author: Jorge Medina
-    Class: Computer Science 201: Data Structures & Algorithms
-    Assignment: Create a Binary Search Tree
 
-    Rules:
-    The application must address the following requirements:
-
-        + Include a user interface allowing a user to interact with the binary search tree.
-        + When a user runs the application, it displays a menu and prompts the user to select an option.
-        + The menu options are:
-            - Create a binary search tree
-            - Add a node
-            - Delete a node
-            - Print nodes by InOrder
-            - Print nodes by PreOrder
-            - Print nodes by PostOrder
-            - Exit program
-*/
 
 public class Main {
     enum MenuOption {
@@ -70,8 +52,7 @@ public class Main {
 
             if (selectedOption == MenuOption.CREATE_TREE) {
                 if (!treeCreated) {
-                    int[] initialValues = {1, 2, 3, 4, 5, 6, 7};
-                    binaryTree.createTree(initialValues);
+                    binaryTree.createTree();
                     treeCreated = true;
                     System.out.println("Binary search tree created with values 1, 2, 3, 4, 5, 6, 7.");
                 } else {

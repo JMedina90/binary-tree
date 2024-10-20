@@ -1,11 +1,9 @@
-public class Node {
-    int key; //
+class Node {
+    int data;
     Node left, right;
 
-    public Node(int item){
-        this.key = item;
-
-        // Initializes the left and right child references to null indicating this node has no children yet
+    public Node(int item) {
+        data = item;
         left = right = null;
     }
 }
